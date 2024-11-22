@@ -111,9 +111,7 @@
             {% csrf_token %}
             {{ form.as_p }}
 
-            <!-- Display the Created on field as read-only -->
-            <label for="created_on">Created On</label>
-            <input id="created_on" type="text" value="{{ object.created_on }}" class="read-only" readonly>
+       
 
             <button type="submit">Update Post</button>
         </form>
